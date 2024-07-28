@@ -1,3 +1,5 @@
+import DashNavigation from "@/components/DashNavigation";
+import DashHeader from "@/components/DashHeader";
 
 export default function DashboardLayout({
   children,
@@ -5,9 +7,12 @@ export default function DashboardLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <div>
-      <h1>Dash Navigation</h1>
-      {children}
+    <div className="min-h-screen flex">
+      <DashNavigation />
+      <div className=" bg-black flex-1">
+        <DashHeader/>
+        {children}
+      </div>
     </div>
   );
 }

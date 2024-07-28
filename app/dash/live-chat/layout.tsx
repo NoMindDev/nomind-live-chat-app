@@ -1,11 +1,13 @@
+import LiveChatNavigation from "@/components/LiveChatNavigation";
+
 export default function LiveChatLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <div>
-      <h1>Live Chat Navigation</h1>
+    <div className="min-h-screen flex">
+      <LiveChatNavigation />
       {children}
     </div>
   );
