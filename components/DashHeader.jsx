@@ -1,9 +1,11 @@
-import React from 'react'
+import React from "react";
 
 const DashHeader = () => {
   return (
-    <div className="bg-blue-950">Header</div>
-  )
-}
+    <div className="border-b">
+      <h1>Dashboard</h1>
+    </div>
+  );
+};
 
-export default DashHeader
+export default DashHeader;

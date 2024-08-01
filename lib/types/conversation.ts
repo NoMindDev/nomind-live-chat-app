@@ -13,13 +13,21 @@ interface Agent {
 }
 
 interface User {
-    id:number
+  id: number;
 }
 
-interface Conversation {
-  id: number;
-  created_at: Date;
-  messages: Message[];
-  agents: Agent[];
-  userId: User;
+// Actual
+// interface Conversation {
+//   id: number;
+//   created_at: Date;
+//   messages: Message[];
+//   agents: Agent[];
+//   userId: User;
+// }
+
+// Dummy
+export interface Conversation {
+  date: string;
+  clientMessage: string;
+  botMessage: string;
 }

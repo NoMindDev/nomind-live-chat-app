@@ -9,7 +9,7 @@ export default function DashboardLayout({
   return (
     <div className="min-h-screen flex">
       <DashNavigation />
-      <div className=" bg-black flex-1">
+      <div className="flex-1 ml-1">
         <DashHeader/>
         {children}
       </div>

@@ -1,9 +1,14 @@
 import React from "react";
 
+// Component
+import LiveChatNavigationHeader from "./LiveChatNavigationHeader";
+import ConversationList from "./ConversationLists";
+
 const LiveChatNavigation = () => {
   return (
-    <div className="bg-blue-500 w-1/4">
-      <h1>Conversations List</h1>
+    <div className="w-1/4 flex flex-col gap-2 border-r">
+      <LiveChatNavigationHeader />
+      <ConversationList />
     </div>
   );
 };

@@ -2,7 +2,7 @@ import React from 'react'
 
 const DashboardPage = () => {
   return (
-    <div className='bg-slate-500 min-h-screen'>Default Dashboard UI</div>
+    <div className='min-h-screen flex justify-center items-center'>Welcome To NMB Dashbaord</div>
   )
 }
 
