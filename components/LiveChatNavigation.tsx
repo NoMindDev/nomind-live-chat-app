@@ -6,7 +6,7 @@ import ConversationList from "./ConversationLists";
 
 const LiveChatNavigation = () => {
   return (
-    <div className="w-1/4 flex flex-col gap-2 border-r">
+    <div className="w-1/4  flex flex-col gap-2 border-r h-screen">
       <LiveChatNavigationHeader />
       <ConversationList />
     </div>

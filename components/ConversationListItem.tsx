@@ -10,7 +10,7 @@ const ConversationListItem = ({
 }) => {
   console.log(conversation);
   return (
-    <div className="border-b">
+    <div className="border-b p-5 flex flex-col gap-5">
       <div className="flex justify-between">
         <div>
           <p className="text-sm">Client : hello why is te c...</p>

@@ -7,12 +7,17 @@ export default function DashboardLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <div className="min-h-screen flex">
-      <DashNavigation />
-      <div className="flex-1 ml-1">
-        <DashHeader/>
-        {children}
-      </div>
+    <div>
+      {children}
     </div>
   );
 }
+
+// Original Layout => There is a styling in here which is disturbing the layout of the chat inbox
+{/* <div className="min-h-screen flex">
+  <DashNavigation />
+  <div className="flex-1 ml-1">
+    <DashHeader/>
+    {children}
+  </div>
+</div> */}
