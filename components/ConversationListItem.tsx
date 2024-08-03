@@ -13,10 +13,12 @@ const ConversationListItem = ({
     <div className="border-b p-5 flex flex-col gap-5">
       <div className="flex justify-between">
         <div>
-          <p className="text-sm">Client : hello why is te c...</p>
+          <p className="text-sm text-[#ABABAB]">
+            Client : hello why is te c...
+          </p>
         </div>
         <div>
-          <p className="text-sm">Date</p>
+          <p className="text-sm text-[#ABABAB]">Date</p>
         </div>
       </div>
       <div>

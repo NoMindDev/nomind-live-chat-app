@@ -1,9 +1,16 @@
 import React from "react";
 
+// Component
+import ClientPresence from "./ClientPresence";
+import AgentPresence from "./AgentPresence";
+import QuickToolsTrigger from "./QuickToolsTrigger";
+
 const ChatHeader = () => {
   return (
-    <div className="text-center">
-      <h1>Chat Header</h1>
+    <div className="px-8 py-2 shadow-lg flex justify-between items-center">
+      <ClientPresence />
+      <AgentPresence />
+      <QuickToolsTrigger/> 
     </div>
   );
 };
