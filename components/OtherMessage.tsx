@@ -6,26 +6,29 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 // SVG
 import ClientAvatar from "@/components/svg/ClientAvatar";
 
-const Message = () => {
+// Type
+import { Message } from "@/lib/types/conversation";
+
+const OtherMessage = ({ message }: { message: Message }) => {
   return (
-    <div className="flex gap-2 w-4/6">
+    <div key={message.id} className="flex gap-2 w-4/6">
       <div>
-        {/* Need a condition to display the avatar based on whether the message is send by client or agent */}
-        {/* <Avatar>
-          <AvatarImage src="https://github.com/shadcn.png" />
-          <AvatarFallback>KN</AvatarFallback>
-        </Avatar> */}
-        <ClientAvatar />
+        {message.role === "AGENT" ? (
+          <Avatar>
+            <AvatarImage src="https://github.com/shadcn.png" />
+            <AvatarFallback>KN</AvatarFallback>
+          </Avatar>
+        ) : (
+          <ClientAvatar />
+        )}
       </div>
       <div className="bg-[#F0F2F5] rounded-3xl px-4 py-1.5">
         <p className="text-sm">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, iste!
-          Deleniti accusantium laborum, provident fugit harum velit suscipit!
-          Deserunt, asperiores?
+          {message.content}
         </p>
       </div>
     </div>
   );
 };
 
-export default Message;
+export default OtherMessage;

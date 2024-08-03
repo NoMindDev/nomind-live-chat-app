@@ -1,6 +1,6 @@
-type Role = "AGENT" | "USER";
+export type Role = "AGENT" | "CLIENT";
 
-interface Message {
+export interface Message {
   id: number;
   created_at: Date;
   role: Role;
@@ -16,18 +16,10 @@ interface User {
   id: number;
 }
 
-// Actual
-// interface Conversation {
-//   id: number;
-//   created_at: Date;
-//   messages: Message[];
-//   agents: Agent[];
-//   userId: User;
-// }
-
-// Dummy
 export interface Conversation {
-  date: string;
-  clientMessage: string;
-  botMessage: string;
+  id: number;
+  created_at: Date;
+  messages: Message[];
+  agents: Agent[];
+  userId: User;
 }
